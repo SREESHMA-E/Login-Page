@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: rgb(32, 135, 219);
+    }
+
+    /* Container */
+    .container{
+      display: flex;
+      height: 500px;
+      width: 800px; 
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    /* Login form */
+    .form{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      align-items: center;
+      background-color:#fff;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .form h2{
+      font-weight: 250;
+      font-size: 2.3rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 50px;
+      margin-bottom: 30px;
+    }
+
+    .form-group{
+      align-items: center;
+      padding: 10px;
+      width: 65%;
+      margin: 10px;
+      border: 1px solid lightgray;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    .checked{
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+
+    #submit{
+      padding: 10px 30px;
+      width: 65%;
+      margin-top: 40px;
+      background-color: rgb(32, 135, 219);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    #submit:hover{
+      cursor: pointer;
+      background-color: blue;
+    }
+
+    .form a{
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .form a:hover{
+      color: #000;
+      font-weight: bold;
+    }
+
+    /* Right side */
+    .side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .side img{
+      width: 400px;
+      height: 500px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="form">
+        <h2>Welcome Back</h2>
+          <input type="email" class="form-group" placeholder="Email" name="email" required>
+          <input type="password" class="form-group" placeholder="Password" name="password" required>
+          <div class="checked">
+          <input type="checkbox" name="remember"> Remember me
+          </div>
+          <button type="submit" id="submit">Login</button>
+          <p><a href="#"> Forgor Your Password? </a></p>
+        </form>
+        <div class="side">
+          <img src="./image/work-desk.jpg" alt="">
+        </div>
+  </div>
+</body>
+</html>
